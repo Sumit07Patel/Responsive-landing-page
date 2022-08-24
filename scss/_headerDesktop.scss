@@ -1,0 +1,84 @@
+@media only screen and (min-width: 61.25rem){
+    nav{
+        padding: 1.1875rem 2.5rem 0rem 2.5rem;
+        margin-bottom: 4.125rem;
+        .hamburger{
+            display: none;
+        }
+        .main-menu{
+            width: 100%;
+            align-items: center;
+        }
+        .navigations{
+            margin-left: 3.875rem;
+        }
+        .navigations ul li{
+            margin-left: 2.5rem;
+        }
+        .navigations ul li:first-child{
+            margin: 0;
+        }
+        .singUpButtons{
+            margin-left: auto;
+        }
+    }
+    .hero-section{
+        padding: 0 10.625rem;
+        grid-template-columns: 50% 50%;
+    }
+    .hero-text{
+        justify-content: flex-end;
+        padding-right: 3rem
+    }
+    .hero-text p{
+        max-width: 30rem;
+        margin-top: 3.75rem;
+    }
+    .hero-text button{
+        margin: 3.75rem 0 6.625rem 0;
+    }
+    .hero-text .client{
+        height: 1.2rem;
+        max-width: 30rem;
+    }
+    .hero-image-desktop img{
+        max-width: 30rem;
+    }
+    .hero-image-mobile{
+        display: none;
+    }
+
+    //effect
+    nav{
+        .navigations ul li:first-child, .navigations ul li:nth-child(2){
+            position: relative;
+        }
+        .feature-dropdown, .company-dropdown{
+            display: absolute;
+        }
+        .feature-dropdown-menu, .company-dropdown-menu{
+            min-width: 7.5rem;
+            position: absolute;
+            top: 1.3rem;
+            right: 0;
+            padding: 1.5rem;
+            background: white;
+            box-shadow: 0px 4px 18px 14px rgba(70, 70, 70, 0.1);
+            border-radius: 7px;
+        }
+        .feature-dropdown-menu  ul li, .company-dropdown-menu  ul li{
+            margin: 0.9375rem 0 0 0;
+            cursor: pointer;
+        }
+        .feature-dropdown-menu  ul li:first-child,
+        .company-dropdown-menu:first-child{
+            margin: 0;
+        }
+        .feature-dropdown-menu  ul li img{
+            margin-right: 0.9375rem;
+        }
+        .navigations ul li:first-child:hover .feature-dropdown-menu, .navigations ul li:nth-child(2):hover .company-dropdown-menu{
+                display: block;
+        }
+    }
+}

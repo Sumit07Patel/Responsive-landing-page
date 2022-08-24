@@ -1,0 +1,79 @@
+nav{
+    @include font(500,0.875rem,$mideumGray);
+    .navigations  ul li{
+        list-style-type: none;
+        cursor: pointer;
+    }
+    .navigations  ul li img{
+        margin-left: 0.225rem;
+        height: 100%;
+    }
+    .company-dropdown-menu, .feature-dropdown-menu{
+        display: none;
+    }
+    .singUpButtons{
+        .button{
+            @include font(500,0.875rem,$mideumGray);
+            width: 6.375rem;
+            height: 2.5rem;
+            background: none;
+            cursor: pointer;
+        }
+        .button:first-child{
+            border: none;
+        }
+        .button:last-child{
+            border: 1px solid $alomstBlack;
+            border-radius: 0.625rem;
+        }
+    }
+}
+.hero-section{
+    display: grid;
+    .hero-text h1{
+        @include font(700,3.9rem,$alomstBlack);
+        line-height: 1;
+    }
+    .hero-text p{
+        @include font(500,1rem,$mideumGray);
+        line-height: 1.6;
+    }
+    .hero-text button{
+        width: 10.625rem;
+        padding: 1.125rem 2rem;
+        @include font(700,18,white);
+        background: $alomstBlack;
+        border: 1px solid $alomstBlack;
+        border-radius: 00.625rem;
+    }
+    .hero-text .client{
+        row-gap: 1rem;
+    }
+    .hero-text .client img{
+        height: 100%;
+        // width: 100%;
+    }
+    .hero-text .client img:not(:first-child){
+        margin-left: 2.5rem;
+    }   
+}
+
+//Effects
+nav{
+    .navigations  ul li:hover{
+        color: $alomstBlack;
+    }
+    .singUpButtons .button:hover{
+        color: $alomstBlack;
+    }
+    .singUpButtons .button:nth-child(2):hover{
+            background-color: $mideumGray;
+    }
+}
+.hero-section{
+    .hero-text button:hover{
+        background: $almostWhite;
+        color: $alomstBlack;
+    }
+}
+
